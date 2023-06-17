@@ -9,7 +9,7 @@ namespace Course.Services.Catalog.Services
      interface ICategoryService
     {
         Task<Response<List<CategoryDto>>> GetAllAsync();
-        Task<Response<CategoryDto>> CreateAsync(Category category);
+        Task<Response<CategoryDto>> CreateAsync(CategoryDto categoryDto);
         Task<Response<CategoryDto>> GetById(string id);
     }
 }
