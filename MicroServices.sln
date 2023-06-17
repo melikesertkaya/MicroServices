@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{AB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{41D93B1A-D9A4-432C-B5D4-6955AA8C0CC2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Course.Services.Catalog", "Services\Catalog\Course.Services.Catalog\Course.Services.Catalog.csproj", "{1964F050-5957-426F-9865-4FFBBD1EC0E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreeCourse.Services.Catalog", "Services\Catalog\Course.Services.Catalog\FreeCourse.Services.Catalog.csproj", "{1964F050-5957-426F-9865-4FFBBD1EC0E6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E6B655F0-ACA4-43D7-A02A-8A4A48BB3521}"
 	ProjectSection(SolutionItems) = preProject
@@ -16,7 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{811A5340-0A5C-43DD-A200-96F797B2F7C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Course.Shared", "Shared\Course.Shared\Course.Shared.csproj", "{E15BE30C-4917-4AC2-84C4-6C295F263983}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Course.Shared", "Shared\Course.Shared\Course.Shared.csproj", "{E15BE30C-4917-4AC2-84C4-6C295F263983}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
