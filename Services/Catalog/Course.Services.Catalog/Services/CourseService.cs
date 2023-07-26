@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Course.Services.Catalog.Services
 {
-    internal class CourseService: ICourseService
+    public class CourseService: ICourseService
     {
         private readonly IMongoCollection<Models.Course> _courseCollection;
         private readonly IMongoCollection<Models.Category> _categoryCollection;
