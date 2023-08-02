@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\IdentityServer\FreeCourse.IdentityServer\FreeCourse.IdentityServer.csproj" />
     <ProjectReference Include="..\..\..\Shared\Course.Shared\FreeCourse.Shared.csproj" />
   </ItemGroup>
 
