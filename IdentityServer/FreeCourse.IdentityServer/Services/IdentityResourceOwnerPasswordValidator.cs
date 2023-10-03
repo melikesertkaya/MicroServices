@@ -21,7 +21,7 @@ namespace FreeCourse.IdentityServer.Services
             if (existUser==null)
             {
                var error = new Dictionary<string, object>();
-                error.Add("error",new List<string> { "Email or password is wrong"});
+                error.Add("error",new List<string> { "Email or password is wrong hehehhe"});
                 context.Result.CustomResponse = error;
                 return;
             }
