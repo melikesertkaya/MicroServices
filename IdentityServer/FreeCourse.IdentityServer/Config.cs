@@ -38,13 +38,27 @@ namespace FreeCourse.IdentityServer
         public static IEnumerable<Client> Clients =>
             new Client[]
          {
+             //Client Credentials does not have a refresh token 
                 new Client
                 {
-                   ClientName="Asp.Net Core MVC",
+                    ClientName="Asp.Net Core MVC",
                     ClientId="WebMvcClient",
                     ClientSecrets= {new Secret("secret".Sha256())},
                     AllowedGrantTypes= GrantTypes.ClientCredentials,// It does not require a membership system.
                     AllowedScopes={ "catalog_fullpermission","photo_stock_fullpermission", IdentityServerConstants.LocalApi.ScopeName }
+                },
+               new Client
+                {
+                    ClientName="Asp.Net Core MVC",
+                    ClientId="WebMvcClient",
+                    ClientSecrets= {new Secret("secret".Sha256())},
+                    AllowedGrantTypes= GrantTypes.ResourceOwnerPassword,// It does not require a membership system.
+                    AllowedScopes={ IdentityServerConstants.StandardScopes.Email,IdentityServerConstants.StandardScopes.OpenId,
+                    IdentityServerConstants.StandardScopes.Profile,IdentityServerConstants.StandardScopes.OfflineAccess,"roles" },
+                    AccessTokenLifetime=1*60*60,
+                    RefreshTokenExpiration=TokenExpiration.Absolute,
+                    AbsoluteRefreshTokenLifetime=(int)(DateTime.Now.AddDays(60)-DateTime.Now).TotalSeconds,
+                    RefreshTokenUsage=TokenUsage.ReUse
                 },
             };
     }
